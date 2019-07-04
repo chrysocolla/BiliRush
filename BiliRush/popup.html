@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		body {
+			width: 200px;
+			height: 26px;
+		}
+
+		.wrapper {
+			width: 100%;
+			height: 100%;
+			margin: 0;
+			padding: 0;
+			display: flex;
+			flex-direction: row;
+			align-content: center;
+		}
+
+		.wrapper input[type=range] {
+			-webkit-appearance: none;
+			margin: auto;
+			width: 76% !important;
+			background-color: #ebeff4;
+			-webkit-appearance: none;
+			height: 5px;
+			padding: 0;
+			border: none;
+		}
+
+		.wrapper input[type=range]:focus {
+			outline: none;
+		}
+
+		.wrapper input[type=range]::-webkit-slider-thumb {
+			-webkit-appearance: none;
+			cursor: default;
+			top: 0;
+			height: 20px;
+			width: 20px;
+			transform: translateY(0px);
+			background: #fff;
+			border-radius: 15px;
+			border: 5px solid #006eb3;
+		}
+
+		.wrapper input[type=button] {
+			-webkit-appearance: none;
+			height: 26px;
+			width: 20% !important;
+			background: #fff;
+			border-radius: 3px;
+			border: 2px solid #006eb3;
+			text-align: center;
+			font-family: sans-serif;
+			font-weight: bolder;
+			color: #006eb3;
+			transition-duration: 0.4s;
+		}
+
+		.wrapper input[type=button]:focus {
+			outline: none;
+			background: #fff;
+		}
+
+		.wrapper input[type=button]:hover {
+			background: #006eb3;
+			color: #fff;
+		}
+	</style>
+	<script src="popup.js"></script>
+</head>
+
+<div class="wrapper">
+	<input type="range" name="speedpicker" id="speedpicker" min="0" max="9">
+	<input type="button" id="resetbutton" value="1.00">
+</div>
+
+</html>
